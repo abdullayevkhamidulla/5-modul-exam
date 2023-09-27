@@ -7,7 +7,6 @@ let addtaskbutton1 = document.getElementById("btn2");
 let addtaskbutton2 = document.getElementById("btn3");
 
 
-
 for (box of boxes){
  box.addEventListener("dragstart", function(e){
     let selected = e.target;
@@ -45,21 +44,24 @@ for (box of boxes){
 }
 addtaskbutton.addEventListener("click", ()=> {
     const card =document.createElement("div");
-    card.className="list h2";
-    card.textContent="exra"
+    const task_progress = document.createElement("h2");
+    card.className="list";
+    card.textContent="exra";
     left.append(card);
     card.draggable=true;
+    
+    
 });
 addtaskbutton1.addEventListener("click", ()=> {
     const card =document.createElement("div");
-    card.className="list h2";
+    card.className="list";
     card.textContent="exra"
     center.append(card);
     card.draggable=true;
 });
 addtaskbutton2.addEventListener("click", ()=> {
     const card =document.createElement("div");
-    card.className="list h2";
+    card.className="list ";
     card.textContent="exra"
     right.append(card);
     card.draggable=true;

@@ -47,10 +47,13 @@ body{
     background-color: rgb(75, 70, 70);
     padding: 10px;
     box-sizing: border-box;
+    color: white;
+    font-size: 25px;
     
 }
 h2{
     margin: 0;
+    font-size: 25px;
     color: white;
 }
 #right{
